@@ -14,7 +14,7 @@ Simple number guessing game using python.
 
 ## Technologies
 
-- Python
+- Python random module
 - Command line interface
 - if / elif / else logic
 - Loops
@@ -37,3 +37,7 @@ Simple number guessing game using python.
   Correct you guessed the number!
   Have a great day!
 
+## Future updates
+1. Higher difficulty
+2. Replay option
+3. Guess counter
