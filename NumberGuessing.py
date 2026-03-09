@@ -1,28 +1,68 @@
 import random
 
-print("Welcome to number guessing game.")
-right_number = random.randint(1,5)
+print("Welcome to number guessing game.\n")
+print("Select a difficulty level:")
+print("1.Easy (1-5)")
+print("2.Medium (1-10)")
+print("3.Hard (1-20)")
+level = int(input("Enter the level number:"))
 
+if level == 1:
+    print("You have selected easy level.")
+    right_number = random.randint(1,5)
+elif level == 2:
+    print("You have selected medium level.")
+    right_number = random.randint(1,10)
+else:
+    print("You have selected hard level.")
+    right_number = random.randint(1,20)
 print("I've picked a number for you to guess.")
-print("The number is between 1 and 5.\n")
+
 
 guessed_number = int(input("Guess a number: "))
 
 while guessed_number != right_number:
-    if guessed_number == right_number:
-        print("Correct guess.")
+    if   level == 1 and guessed_number == right_number:
+        print("Correct guess!!")
+        print("You won. Thank you for playing!!")
+    elif level == 2 and guessed_number == right_number:
+        print("Correct guess!!")
+        print("You won. Thank you for playing!!")
+    elif level == 3 and guessed_number == right_number:
+        print("Correct guess!")
+        print("You won!! Thank you for playing!!")
+    elif level == 1 and (guessed_number > right_number):
+        print("Invalid guess. please enter a smaller number.")
+        print("Give it another shot!")
+    elif level == 1 and (guessed_number < right_number):
+        print("Invalid guess. please enter a bigger number.")
+        print("Give it another shot!")
+    elif level == 2 and (guessed_number > right_number):
+        print("Invalid guess. Please enter a smaller number.")
+        print("Give it another shot!")
+    elif level == 2 and (guessed_number < right_number):
+        print("Invalid guess. please enter a bigger number.")
+        print("Give it another shot!")
+    elif level == 3 and (guessed_number > right_number):
+        print("Invalid guess. Please enter a number smaller number.")
+        print("Give it another shot.")
+    elif level == 3 and (guessed_number < right_number):
+        print("Invalid guess. Please enter a bigger number.")
+        print("Give it another shot.")
+    elif guessed_number < right_number or guessed_number > right_number:
+        print("Invalid guess. Please enter a number between 1 and 5.")
     elif guessed_number > right_number:
         print("\nYour guess is not correct.")
         print("Give it another shot.")
         print("Choose a lower number.\n")
     elif guessed_number < right_number:
-        print("\nYour guess is not correct.")
+        print("\n Your guess is not correct.")
         print("Give it another shot.")
         print("Choose a higher number.\n")
     else:
         print("Incorrect guess.")
     guessed_number = int(input("Enter guess number again: "))
-
-print("/nCongratulations! You've guessed the right number.")
+print("\nCorrect guess!!")
+print("You won!! Thank you for playing!!")
 
 
