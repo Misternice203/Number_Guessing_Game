@@ -8,13 +8,13 @@ print("3.Hard (1-20)")
 level = int(input("Enter the level number:"))
 
 if level == 1:
-    print("You have selected easy level.")
+    print("You have selected Easy level.")
     right_number = random.randint(1,5)
 elif level == 2:
-    print("You have selected medium level.")
+    print("You have selected Medium level.")
     right_number = random.randint(1,10)
 else:
-    print("You have selected hard level.")
+    print("You have selected Hard level.")
     right_number = random.randint(1,20)
 print("I've picked a number for you to guess.")
 
@@ -45,14 +45,21 @@ while guessed_number != right_number:
         print("Give it another shot!")
     elif level == 3 and (guessed_number > right_number):
         print("Invalid guess. Please enter a smaller number.")
-        print("Give it another shot.")
+        print("Give it another shot!")
     elif level == 3 and (guessed_number < right_number):
         print("Invalid guess. Please enter a bigger number.")
-        print("Give it another shot.")
+        print("Give it another shot!")
     guessed_number = int(input("Enter guess number again: "))
+
 print("\nCorrect guess!!")
 print("You won!! Thank you for playing!!")
-
+print("The number was:" , right_number)
+print("Play again? (y/n)")
+play_again = input()
+if play_again == "y":
+    print("Restarting game!!")
+else:
+    print("Thank you for playing!!")
 
 
 
