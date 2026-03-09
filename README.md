@@ -39,5 +39,5 @@ Simple CLI number guessing game using python.
 
 ## Future updates
 1. Higher difficulty - completed
-2. Replay option - 
+2. Replay option - completed
 3. Guess counter - 
