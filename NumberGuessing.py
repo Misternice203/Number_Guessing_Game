@@ -21,7 +21,7 @@ while True:
 
 
     guessed_number = int(input("Guess a number: "))
-
+    # start loop to continue until user guesses correctly.
     while guessed_number != right_number:
         if   level == 1 and guessed_number == right_number:
             print("Correct guess!!")
