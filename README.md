@@ -35,7 +35,7 @@ Simple CLI number guessing game using python.
   Too high! Try again.
 - Enter your guess: 3
   Correct you guessed the number!
-  Have a great day!
+  Would you like to play again? (y/n):
 
 ## Future updates
 1. Higher difficulty - completed
