@@ -44,7 +44,7 @@ while guessed_number != right_number:
         print("Invalid guess. please enter a bigger number.")
         print("Give it another shot!")
     elif level == 3 and (guessed_number > right_number):
-        print("Invalid guess. Please enter a number smaller number.")
+        print("Invalid guess. Please enter a smaller number.")
         print("Give it another shot.")
     elif level == 3 and (guessed_number < right_number):
         print("Invalid guess. Please enter a bigger number.")
@@ -64,5 +64,6 @@ while guessed_number != right_number:
     guessed_number = int(input("Enter guess number again: "))
 print("\nCorrect guess!!")
 print("You won!! Thank you for playing!!")
+
 
 
