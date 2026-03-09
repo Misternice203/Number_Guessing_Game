@@ -1,0 +1,12 @@
+## CHANGELOG FILE
+
+## version 1.0 - Intitial version of number guessing game
+- Random number generator.
+- user guessing loop.
+
+## version 1.1 - updated difficulty levels
+- added levels 1 2 and 3, with increasing difficulties.
+- updatded code to reflect difficulty scaling.
+- added quality of life feature for user.
+
+## version 1.2 - 
