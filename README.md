@@ -38,6 +38,6 @@ Simple number guessing game using python.
   Have a great day!
 
 ## Future updates
-1. Higher difficulty
-2. Replay option
-3. Guess counter
+1. Higher difficulty - completed
+2. Replay option - 
+3. Guess counter - 
