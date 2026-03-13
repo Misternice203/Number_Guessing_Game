@@ -21,45 +21,25 @@ while True:
 
 
     guessed_number = int(input("Guess a number: "))
-    # start loop to continue until user guesses correctly.
+    counted_guesses = 1
+
     while guessed_number != right_number:
-        if   level == 1 and guessed_number == right_number:
-            print("Correct guess!!")
-            print("You won. Thank you for playing!!")
-        elif level == 2 and guessed_number == right_number:
-            print("Correct guess!!")
-            print("You won. Thank you for playing!!")
-        elif level == 3 and guessed_number == right_number:
-            print("Correct guess!")
-            print("You won!! Thank you for playing!!")
-        elif level == 1 and (guessed_number > right_number):
-            print("Invalid guess. please enter a smaller number.")
-            print("Give it another shot!")
-        elif level == 1 and (guessed_number < right_number):
-            print("Invalid guess. please enter a bigger number.")
-            print("Give it another shot!")
-        elif level == 2 and (guessed_number > right_number):
+        if guessed_number > right_number:
             print("Invalid guess. Please enter a smaller number.")
-            print("Give it another shot!")
-        elif level == 2 and (guessed_number < right_number):
-            print("Invalid guess. please enter a bigger number.")
-            print("Give it another shot!")
-        elif level == 3 and (guessed_number > right_number):
-            print("Invalid guess. Please enter a smaller number.")
-            print("Give it another shot.")
-        elif level == 3 and (guessed_number < right_number):
+        else:
             print("Invalid guess. Please enter a bigger number.")
-            print("Give it another shot.")
-        guessed_number = int(input("Enter guess number again: "))
+        print("Give it another shot!")
+        guessed_number = int(input("Guess a number: "))
+        counted_guesses += 1
 
     print("\nCorrect guess!!")
+    print("You guessed the number in", counted_guesses, "guesses.")
     print("You won!! Thank you for playing!!")
     print("The number was:" , right_number)
-    play_again = input("Play again? (y/n): ").strip().lower()
+    play_again = input("Play again? (y/n): ").lower()
     if play_again == "y":
         print("Restarting game!!\n")
     else:
         print("Thank you for playing!!")
         break
-
 
